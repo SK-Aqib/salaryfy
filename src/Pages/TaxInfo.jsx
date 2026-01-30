@@ -14,10 +14,14 @@ function TaxInfo() {
     let taxAmount = 0;
 
     // Example tax slabs for 2025
-    if (s <= 250000) taxAmount = 0;
-    else if (s <= 500000) taxAmount = (s - 250000) * 0.05;
-    else if (s <= 1000000) taxAmount = 12500 + (s - 500000) * 0.2;
-    else taxAmount = 112500 + (s - 1000000) * 0.3;
+    if (s <= 400000) taxAmount = 0;
+    else if (s <= 800000) taxAmount = (s - 400000) * 0.05;
+    else if (s <= 1200000) taxAmount = 20000 + (s - 800000) * 0.10;
+    else if (s <= 1600000) taxAmount = 60000 + (s - 1200000) * 0.15;
+    else if (s <= 2000000) taxAmount = 120000 + (s - 1600000) * 0.20;
+    else if (s <= 2400000) taxAmount = 200000 + (s - 2000000) * 0.25;
+      
+    else taxAmount = 300000 + (s - 2400000) * 0.30;
 
     setTax(taxAmount);
   };
@@ -49,10 +53,13 @@ function TaxInfo() {
 
         <div className="mt-6 text-sm text-gray-700 dark:text-gray-300 space-y-2">
           <p><strong>Tax Slabs (2025):</strong></p>
-          <p>₹0 - ₹2,50,000 → 0%</p>
-          <p>₹2,50,001 - ₹5,00,000 → 5%</p>
-          <p>₹5,00,001 - ₹10,00,000 → 20%</p>
-          <p>Above ₹10,00,000 → 30%</p>
+          <p>₹0 - ₹4,00,000 → 0%</p>
+          <p>₹4,00,001 - ₹8,00,000 → 5%</p>
+          <p>₹8,00,001 - ₹12,00,000 → 10%</p>
+          <p>₹12,00,001 - ₹16,00,000 → 15%</p>
+          <p>₹16,00,001 - ₹20,00,000 → 20%</p>
+          <p>₹20,00,001 - ₹24,00,000 → 25%</p>
+          <p>Above ₹24,00,000 → 30%</p>
         </div>
       </div>
     </div>
