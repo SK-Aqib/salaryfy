@@ -7,9 +7,9 @@ function Footer() {
         <p className="text-sm">&copy; {new Date().getFullYear()} Salaryfy.io. All rights reserved.</p>
         
         <div className="flex space-x-4 mt-4 md:mt-0">
-          <a href="#" className="hover:text-indigo-500">Privacy Policy</a>
-          <a href="#" className="hover:text-indigo-500">Terms of Service</a>
-          <a href="#" className="hover:text-indigo-500">Contact Us</a>
+          <button className="hover:text-indigo-500">Privacy Policy</button>
+          <button className="hover:text-indigo-500">Terms of Service</button>
+          <button className="hover:text-indigo-500">Contact Us</button>
         </div>
       </div>
     </footer>
