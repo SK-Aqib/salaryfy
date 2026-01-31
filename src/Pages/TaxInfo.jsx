@@ -31,6 +31,7 @@ function TaxInfo() {
       <h1 className="text-4xl font-bold text-indigo-600 dark:text-indigo-400 text-center mb-10">
         Tax Information & Calculator
       </h1>
+      <h2>...</h2>
 
       <div className="max-w-md mx-auto bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
         <label className="block text-lg font-semibold mb-2">Enter your Annual Salary (₹)</label>
